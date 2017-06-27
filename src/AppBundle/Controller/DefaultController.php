@@ -80,7 +80,7 @@ class DefaultController extends Controller
 	      ->setPowerTwoValue($request->request->get('powerTwoValue'));
       
       $em = $this->getDoctrine()->getManager();
-      $em->persist($linkEntry);
+      $em->persist($cardEntry);
       $em->flush();
       
       $this->addFlash('success', 'Card updated successfully');

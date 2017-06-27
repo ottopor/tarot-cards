@@ -1,19 +1,27 @@
 {% extends 'base.html.twig' %}
-{% block title %}Edit a link{% endblock %}
+{% block title %}Edit a card{% endblock %}
 {% block body %}
-  {{ dump(linkEntry) }}
+{{ dump(cardEntry) }}
   <form action="" method="post">
-  {% for link in linkEntry %}
-    {{ link.name }}
-    {{ link.destination }}
+  {% for card in cardEntry %}
+    {{ card.cardName }}
+    {{ card.powerOneName }}
         <div class="form-group">
-            <label id="name">Name of link</label>
-            <input type="text" name="name" id="name" value="{{ link.name }}" class="form-control" />
+            <label id="cardName">Card Name</label>
+            <input type="text" name="cardName" id="cardName" value="{{ card.cardName }}" class="form-control" />
         </div>
 
         <div class="form-group">
-            <label for="destination">Destination URL</label>
-            <input type="text" name="destination" id="destination" value="{{ link.destination }}" class="form-control" />
+            <label id="powerOneName">Power One Name</label>
+            <input type="text" name="powerOneName" id="powerOneName" value="{{ card.powerOneName }}" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label id="powerOneValue">Power One Value</label>
+            <input type="text" name="powerOneValue" id="powerOneValue" value="{{ card.powerOneValue }}" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="powerTwoName">Power Two Name</label>
+            <input type="text" name="powerTwoName" id="powerTwoName" value="{{ card.powerTwoName }}" class="form-control" />
         </div>
 
         
