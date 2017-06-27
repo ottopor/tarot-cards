@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Click" table="click">
+    <indexes>
+      <index name="IDX_BAF6C220AEC98E42" columns="linkId"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="creatests" type="datetime" column="createsTs" nullable="false"/>
+    <field name="request" type="array" column="request" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="ip" type="string" column="ip" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="linkid" target-entity="Link" fetch="LAZY">
+      <join-columns>
+        <join-column name="linkId" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

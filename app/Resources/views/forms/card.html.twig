@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block title %}Add a card{% endblock %}
+{% block body %}
+    <form action="/card/add" method="post">
+        <div class="form-group">
+            <label id="cardName">Name of card</label>
+            <input type="text" name="cardName" id="cardName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="powerOneName">Power One Name</label>
+            <input type="text" name="powerOneName" id="powerOneName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="powerOneValue">Power One Value</label>
+            <input type="text" name="powerOneValue" id="powerOneValue" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="powerTwoName">Power Two Name</label>
+            <input type="text" name="powerTwoName" id="powerTwoName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="powerTwoValue">Power Two Value</label>
+            <input type="text" name="powerTwoValue" id="powerTwoValue" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-default">Go</button>
+    </form>
+
+    <a href="/">Back</a>
+{% endblock %}

@@ -1,0 +1,62 @@
+{
+	"suitName": "Astronomy",
+	"cardTotal": 8,
+	"cards": [
+		{
+			"cardName": "Mercury",
+			"powerOneName": "Distance",
+			"powerOneValue": 0.39,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 4878,
+		},
+		{
+			"cardName": "Venus",
+			"powerOneName": "Distance",
+			"powerOneValue": 0.732,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 12104,
+		},
+		{
+			"cardName": "Earth",
+			"powerOneName": "Distance",
+			"powerOneValue": 1,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 12756,
+		},
+		{
+			"cardName": "Mars",
+			"powerOneName": "Distance",
+			"powerOneValue": 1.524,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 6787,
+		},
+		{
+			"cardName": "Jupiter",
+			"powerOneName": "Distance",
+			"powerOneValue": 5.203,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 142796,
+		},
+		{
+			"cardName": "Saturn",
+			"powerOneName": "Distance",
+			"powerOneValue": 9.539,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 120660,
+		},
+		{
+			"cardName": "Uranus",
+			"powerOneName": "Distance",
+			"powerOneValue": 19.18,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 51118,
+		},
+		{
+			"cardName": "Neptune",
+			"powerOneName": "Distance",
+			"powerOneValue": 30.06,
+			"powerTwoName": "Diameter",
+			"powerTwoValue": 48600,
+		}
+	]
+}
