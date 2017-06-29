@@ -1,31 +1,33 @@
 {% extends 'base.html.twig' %}
 {% block title %}Edit a card{% endblock %}
 {% block body %}
-{{ dump(cardEntry) }}
   <form action="" method="post">
-  {% for card in cardEntry %}
-    {{ card.cardName }}
-    {{ card.powerOneName }}
+   <h1>Editing Card: {{ cardEntry.cardName }}</h1>
         <div class="form-group">
             <label id="cardName">Card Name</label>
-            <input type="text" name="cardName" id="cardName" value="{{ card.cardName }}" class="form-control" />
+            <input type="text" name="cardName" id="cardName" value="{{ cardEntry.cardName }}" class="form-control" />
         </div>
 
         <div class="form-group">
             <label id="powerOneName">Power One Name</label>
-            <input type="text" name="powerOneName" id="powerOneName" value="{{ card.powerOneName }}" class="form-control" />
+            <input type="text" name="powerOneName" id="powerOneName" value="{{ cardEntry.powerOneName }}" class="form-control" />
         </div>
+
         <div class="form-group">
             <label id="powerOneValue">Power One Value</label>
-            <input type="text" name="powerOneValue" id="powerOneValue" value="{{ card.powerOneValue }}" class="form-control" />
+            <input type="text" name="powerOneValue" id="powerOneValue" value="{{ cardEntry.powerOneValue }}" class="form-control" />
         </div>
+
         <div class="form-group">
             <label for="powerTwoName">Power Two Name</label>
-            <input type="text" name="powerTwoName" id="powerTwoName" value="{{ card.powerTwoName }}" class="form-control" />
+            <input type="text" name="powerTwoName" id="powerTwoName" value="{{ cardEntry.powerTwoName }}" class="form-control" />
         </div>
 
         
-    {% endfor %}
+        <div class="form-group">
+            <label id="powerTwoValue">Power Two Value</label>
+            <input type="text" name="powerTwoValue" id="powerTwoValue" value="{{ cardEntry.powerTwoValue }}" class="form-control" />
+        </div>
 <button type="submit" class="btn btn-default">Go</button>
     </form>
     <a href="/">Back</a>

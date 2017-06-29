@@ -73,7 +73,7 @@ class DefaultController extends Controller
     $cardEntry = $this->getDoctrine()->getRepository('AppBundle:Card')->findOneBy(array('id' => $cardId));
     // updating entry when form submitted
     if ($request->isMethod('post')) {
-      $cardEntry->setName($request->request->get('cardName'))
+      $cardEntry->setCardName($request->request->get('cardName'))
 	      ->setPowerOneName($request->request->get('powerOneName'))
 	      ->setPowerOneValue($request->request->get('powerOneValue'))
 	      ->setPowerTwoName($request->request->get('powerTwoName'))
